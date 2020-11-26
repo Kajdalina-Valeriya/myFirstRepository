@@ -16,7 +16,22 @@ public class Main {
             }
             i++;
         }
+        int Apple=0;
+        int Cheese =0;
+        int Coffee=0;
+        for (Food item: breakfast){
+            if (item instanceof Apple){
+                Apple++;
+            }else if (item instanceof Cheese){
+                Cheese++;
+            }else if (item instanceof Coffee){
+                Coffee++;
+            }
+        }
 
+        System.out.println("Яблоки:"+Apple+"   Сыр:"+Cheese+"   Кофе:"+Coffee);
+
+        
         System.out.println("Завтрак: ");
         for (Food item : breakfast) {
             if (item != null) {
@@ -25,6 +40,7 @@ public class Main {
                 break;
             }
         }
+
     }
 }
 
